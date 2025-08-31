@@ -23,13 +23,6 @@ jobs:
         cache: maven
     - name: Running Test Automation Framework with Maven
       run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
-   
-    - name: Upload Surefire Reports
-      if: always()
-      uses: actions/upload-artifact@v4.6.2
-      with:
-        name: Surefire Reports
-        path: target/surefire-reports
 
     -  name: Upload Test logs
        if: always()
