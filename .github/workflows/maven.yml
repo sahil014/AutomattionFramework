@@ -21,6 +21,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+        
+    - name: Create logs folder
+      run: mkdir -p logs
+      
     - name: Running Test Automation Framework with Maven
       run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=true
 
