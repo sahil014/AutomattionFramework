@@ -34,6 +34,6 @@ public final class LoginTest3 extends TestBase {
 			  dataProviderClass=com.ui.dataproviders.LoginDataProvider.class,dataProvider="LoginExcelDataProvider", retryAnalyzer=com.ui.listeners.MyRetryAnalyzer.class)
 		
 		public void loginTest3(User user) throws InterruptedException {		 
-		 assertEquals(homePageObject.goToLoginPage().doLoginWith(user.getEmail(), user.getPassword()).getUserName(),"Sahil Narang");
+		 assertEquals(homePageObject.goToLoginPage().doLoginWith(user.getEmail(), user.getPassword()).getUserName(),"Sahil Narangz");
 	}
 }
