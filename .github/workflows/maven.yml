@@ -38,7 +38,7 @@ jobs:
         name: Test Reports
         path: report.html
 
-    -  name: Upload Test Reports
+    -  name: Notify Test Complettion
        run:  echo "Test Execution Completed"
 
 
