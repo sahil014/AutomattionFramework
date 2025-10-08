@@ -71,7 +71,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
        folder: public/extent-reports/
-       token: ${{ secrets.TokenPublishReport }} 
+       token: ${{ secrets.DEPLOYMENT_SECRET }} 
        branch: gh-pages
        clean: true
 
