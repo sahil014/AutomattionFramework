@@ -53,7 +53,7 @@ jobs:
         name: html-reports
         path: report.html
 
-    -  name: Notify Tests Complettion
+    -  name: Notify Test Complettion
        run:  echo "Test Execution Completed"
 
     - name: Copy Report to gh-pages Folder
